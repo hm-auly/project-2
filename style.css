@@ -1,0 +1,517 @@
+/* -- common & reset code start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.common-btn{
+    background-color: #FE8C45;
+    color: black;
+}
+/* -- common & reset code emd */
+
+/* -- hero section start */
+.rool{
+    width: 30%;
+    height: 20px;
+    margin-left: 10%;
+}
+.h1{
+    font-size: 66px;
+}
+/* -- hero section end */
+
+/* -- about section start */
+.about-section{
+    background-color: rgb(129, 79, 210, 0.1);
+    & img{
+        width: 85%;
+        margin-left: 50px;
+    }
+}
+/* -- about section end */
+
+/* -- portfolio section start */
+.img-gg{
+    margin-left: 400px;
+    position: absolute;
+    top: 1650px;
+}
+
+.img-2{
+    width: 95%;
+        margin-left: 40px;
+        height: 250px;
+}
+
+
+.grid{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-gap: 15px;
+    padding: 10px;
+    margin-top: 5px;
+
+    & div{
+      
+    }
+    .itam-1{
+        grid-row: 1 / 3;
+        grid-column: 1 / 4;
+
+        & img{
+            width: 100%;
+            height: 670px;
+        }
+    }
+    .itam-2{
+        grid-column: 4 / 9;
+
+        & img{
+            width: 100%;
+            height: 360px;
+        }
+    }
+    .itam-3{
+        grid-column: 9 / 12; 
+
+        & img{
+            width: 100%;
+            height: 360px;
+        }
+    }
+    .itam-4{
+        grid-column: 4 / 6;
+
+        & img{
+            width: 100%;
+        }
+        
+    }
+    .itam-5{
+        grid-column: 6 / 12;
+
+        & img{
+            width: 100%;
+            height: 290px;
+        }
+        
+    }
+    .itam-6{
+        grid-column: 1 / 5;
+
+        & img{
+            width: 100%;
+            height: 290px;
+        }
+    }
+    .itam-7{
+        grid-column: 5 / 9;
+
+        & img{
+            width: 100%;
+        } 
+    }
+    .itam-8{
+        grid-row: 3 / 5;
+        grid-column: 9 / 12;
+
+        
+        & img{
+            height: 560px;
+            
+        }   
+    }
+    .itam-9{
+        grid-column: 1 / 4;
+       
+    }
+    .itam-10{
+        grid-column: 4 / 9;
+            
+    }  
+}
+/* -- portfolio section end */
+
+/* -- card section start */
+.card-div{
+    text-align: center;
+    padding: 10px;
+
+    & button{
+       margin: 0 auto;
+    }
+}
+/* -- card section end */
+
+/* -- testimo section start */
+.testimo{
+    background-color: rgb(138, 71, 246, 0.1);
+
+
+    .test-btn{
+        background-color: rgb(138, 71, 246, 0.2  );
+        width: 48%;
+    }
+    & h5{
+        font-weight: bolder;
+    }
+}
+/* -- testimo section end */
+
+/* -- feed section start */
+.grid-2{
+    width: 100%;
+    display: grid;
+    row-gap: 15px;
+    grid-template-columns: repeat(12, auot);
+
+    & div{
+        
+    }
+
+    .itam-2-1{
+        grid-column: 1 / 6 ;
+    }
+    .itam-2-2{
+        grid-column: 6 / 9 ;
+    }
+    .itam-2-3{
+        grid-row: 1 / 3;
+        grid-column: 9 / 12;
+    }
+    .itam-2-4{
+        grid-row: 2 / 4;
+        grid-column: 1 / 6;
+    }
+    .itam-2-5{
+        grid-row: 2 / 4;
+        grid-column: 6 / 9 ;
+    }
+    .itam-2-6{
+        grid-row: 3 / 4;
+        grid-column: 9 / 12 ;
+    }
+
+ }
+
+/* -- feed section end */
+
+/* --question section start */
+.cartd-div{
+    background-color: rgb(138, 71, 246, 0.1);
+}
+.contact{
+    
+    & h6{
+        font-size: 15px;
+    }
+    & p{
+        font-size: 12px;
+    }
+
+}
+.icon{
+    background-color: #8A47F6;
+    
+}
+
+/* --question section end */
+ 
+
+
+
+/* -- responsivs sections -- */
+
+@media all and (max-width: 430px) {
+
+    .grid{ 
+
+       
+        .itam-1{
+            grid-column: 1 / 2;
+            
+            & img{
+                width: 97%;
+            }
+        }
+        .itam-2{
+            grid-column: 1 / 2;
+
+            & img{
+                width: 97%;
+            }
+        }
+        .itam-3{
+            grid-column: 1 / 4; 
+
+            & img{
+                width: 97%;
+            }
+        }
+        .itam-4{
+            grid-column: 1 / 2;
+
+            & img{
+                width: 97%;
+            }
+            
+        }
+        .itam-5{
+            grid-column: 1 / 2;
+            
+            & img{
+                width: 97%;
+            }
+        }
+        .itam-6{
+            grid-column: 1 / 2;
+
+            & img{
+                width: 97%;
+            }
+        }
+        .itam-7{
+            grid-column: 1 / 2;
+
+            & img{
+                width: 97%;
+            }
+        }
+        .itam-8{
+           display: none;
+        }
+        .itam-9{
+            grid-column: 1 / 2;
+
+            & img{
+                width: 97%;
+            }
+           
+        }
+        .itam-10{
+            grid-column: 1 / 2;
+
+            & img{
+                width: 97%;
+            }
+                
+        }  
+    }
+   
+    .testimo-img{
+        width: 98%;
+    }
+    /* -- feed section start */
+  .grid-2{
+    & div{
+        
+    }
+
+    .itam-2-1{
+        grid-column: 1 / 2;
+
+        & img{
+            width: 97%;
+        }
+    }
+    .itam-2-2{
+        grid-column: 1 / 2;
+
+        & img{
+            width: 97%;
+        }
+    }
+    .itam-2-3{
+        grid-column: 1 / 2;
+
+        & img{
+            width: 97%;
+        }
+    }
+    .itam-2-4{
+        display: none;
+    }
+    .itam-2-5{
+        grid-row: 5 / 10;
+        grid-column: 1 / 2 ;
+
+        & img{
+            width: 97%;
+        }
+    }
+    .itam-2-6{
+        grid-row: 10 / 15;
+        grid-column: 1 / 2 ;
+
+        & img{
+            width: 97%;
+        }
+    }
+
+ }
+
+/* -- feed section end */
+ 
+
+}
+
+
+@media all and (max-width: 412px) { 
+
+    .grid{ 
+       
+        & div{
+          
+        }
+        .itam-1{
+            grid-column: 1 / 3;
+        }
+        .itam-2{
+            grid-column: 1 / 3;
+        }
+        .itam-3{
+            grid-column: 1 / 3; 
+        }
+        .itam-4{
+            grid-column: 1 / 3;
+            
+        }
+        .itam-5{
+            grid-column: 1 / 3;
+            
+        }
+        .itam-6{
+            grid-column: 1 / 3;
+        }
+        .itam-7{
+            grid-column: 1 / 3;
+        }
+        .itam-8{
+           display: none;
+        }
+        .itam-9{
+            grid-column: 1 / 3;
+           
+        }
+        .itam-10{
+            grid-column: 1 / 3;
+                
+        }  
+    }
+    
+    /* -- feed section start */
+  .grid-2{
+    & div{
+        
+    }
+
+    .itam-2-1{
+        grid-column: 1 / 3;
+    }
+    .itam-2-2{
+        grid-column: 1 / 3;
+    }
+    .itam-2-3{
+       
+        grid-row: none;
+        grid-column: 1 / 3;
+    }
+    .itam-2-4{
+        grid-column: 1 / 3 ;
+    }
+    .itam-2-5{
+        grid-row: 5 / 10;
+        grid-column: 1 / 3 ;
+    }
+    .itam-2-6{
+        grid-row: 10 / 15;
+        grid-column: 1 / 3 ;
+    }
+
+ }
+
+/* -- feed section end */
+ 
+
+}
+@media all and (max-width: 763px) {
+
+    .grid{ 
+       
+        & div{
+          
+        }
+        .itam-1{
+            grid-column: 1 / 7;
+        }
+        .itam-2{
+            grid-column: 1 / 7;
+        }
+        .itam-3{
+            grid-column: 1 / 7; 
+        }
+        .itam-4{
+            grid-column: 1 / 7;
+            
+        }
+        .itam-5{
+            grid-column: 1 / 7;
+            
+        }
+        .itam-6{
+            grid-column: 1 / 7;
+        }
+        .itam-7{
+            grid-column: 1 / 7;
+        }
+        .itam-8{
+           display: none;
+        }
+        .itam-9{
+            grid-column: 1 / 7;
+           
+        }
+        .itam-10{
+            grid-column: 1 / 7;
+                
+        }  
+    }
+
+
+    /* -- feed section start */
+  .grid-2{
+    & div{
+        
+    }
+
+    .itam-2-1{
+        grid-column: 1 / 7;
+    }
+    .itam-2-2{
+        grid-column: 1 / 7;
+    }
+    .itam-2-3{
+       
+        grid-row: none;
+        grid-column: 1 / 7;
+    }
+    .itam-2-4{
+        grid-column: 1 / 7 ;
+    }
+    .itam-2-5{
+        grid-row: 5 / 10;
+        grid-column: 1 / 7 ;
+    }
+    .itam-2-6{
+        grid-row: 10 / 15;
+        grid-column: 1 / 7 ;
+    }
+
+ }
+
+/* -- feed section end */
+
+}
